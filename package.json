@@ -2,8 +2,8 @@
   "name": "cv",
   "version": "0.0.0",
   "engines": {
-    "node": "x.x.x",
-    "npm": "x.x.X"
+    "node": "16.14.2",
+    "npm": "8.5.0"
   },
   "scripts": {
     "ng": "ng",
