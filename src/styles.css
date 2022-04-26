@@ -1,2 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
+.bgimg {
+  background-image: url("./assets/bg.avif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.textBleu {
+  color: #02adaf;
+}
+
+.textwhite {
+  color: white;
+}
+.textAlexBrush {
+  font-family: "alexBrush", Arial, Helvetica, sans-serif;
+}
+.textTapestryRegular {
+  font-family: "tapestryRegular", Arial, Helvetica, sans-serif;
+}
+.text20px {
+  font-size: 20px;
+}
+.text60px {
+  font-size: 60px;
+}
+.bgBleu {
+  background-color: #02adaf;
+}
+.bgVerdigris {
+  background-color: #f4d35e;
+}
+.bgPine {
+  background-color: #1f271b;
+}
+@font-face {
+  font-family: "alexBrush";
+  src: local("alexBrush"),
+    url(./assets/fonts/AlexBrush-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "tapestryRegular";
+  src: local("tapestryRegular"),
+    url(./assets/fonts/Tapestry-Regular.ttf) format("truetype");
+}
