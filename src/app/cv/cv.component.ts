@@ -10,5 +10,6 @@ export class CvComponent implements OnInit {
   body = document.querySelector('body');
   ngOnInit(): void {
     this.body?.classList.remove('bgimg');
+    this.body?.classList.add('bgDark');
   }
 }

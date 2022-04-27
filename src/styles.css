@@ -1,11 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 .bgimg {
+  background: #050505;
   background-image: url("./assets/bg.avif");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.bgDark {
+  background-image: url("./assets/bgDark.jpg");
 }
 .textBleu {
   color: #02adaf;
