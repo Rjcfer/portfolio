@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "skills": "Competências",
+    "contact": "Contato"
+  },
+  "hero": {
+    "subtitle": "ENGENHEIRO FULL STACK",
+    "description": "Desenvolvedor Full Stack apaixonado, sempre em busca de novos desafios técnicos.",
+    "cta_projects": "PROJETOS",
+    "cta_contact": "CONTATO"
+  },
+  "about": {
+    "title": "Sobre",
+    "text": "Desenvolvedor Full Stack atualmente trabalhando numa startup, em regime 100% remoto. Vindo de uma reconversão profissional — pedreiro, motorista de caminhão, depois desenvolvedor — construí uma forte ética de trabalho e capacidade de adaptação que me permite evoluir rapidamente em novas tecnologias.",
+    "location": "Épernay — Paris | Híbrido"
+  },
+  "skills": {
+    "title": "Competências",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "devops": "DevOps & Cloud",
+    "other": "Outros"
+  },
+  "projects": {
+    "title": "Projetos",
+    "view_project": "Ver projeto",
+    "view_code": "Ver código",
+    "edh": {
+      "title": "EDH Analyser",
+      "description": "Aplicação web de análise para o jogo de cartas Magic: The Gathering no formato EDH/Commander. Análise de decks, recomendações IA, gestão de coleção."
+    },
+    "hiji": {
+      "title": "Hiji — Plataforma RH",
+      "description": "Desenvolvedor Full Stack — conceção, desenvolvimento e manutenção de uma webapp internacional de RH. Front-end, back-end, bases de dados, integração de API, deploy, code reviews, ferramentas IA."
+    }
+  },
+  "contact": {
+    "title": "Contato",
+    "email": "Email",
+    "subtitle": "Não hesite em entrar em contato"
+  },
+  "lang": {
+    "fr": "FR",
+    "en": "EN",
+    "pt": "PT"
+  }
+}

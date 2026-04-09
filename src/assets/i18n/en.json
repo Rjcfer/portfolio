@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "FULL STACK ENGINEER",
+    "description": "Passionate Full Stack Developer, always seeking new technical challenges.",
+    "cta_projects": "PROJECTS",
+    "cta_contact": "CONTACT"
+  },
+  "about": {
+    "title": "About",
+    "text": "Full Stack Developer currently working at a startup, fully remote. Coming from a career change — bricklayer, truck driver, then developer — I've built a strong work ethic and adaptability that allows me to quickly ramp up on new technologies.",
+    "location": "Épernay — Paris | Hybrid"
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "devops": "DevOps & Cloud",
+    "other": "Other"
+  },
+  "projects": {
+    "title": "Projects",
+    "view_project": "View project",
+    "view_code": "View code",
+    "edh": {
+      "title": "EDH Analyser",
+      "description": "Web application for analyzing Magic: The Gathering EDH/Commander format. Deck analysis, AI recommendations, collection management."
+    },
+    "hiji": {
+      "title": "Hiji — HR Platform",
+      "description": "Full Stack Developer — design, development and maintenance of an international HR webapp. Front-end, back-end, databases, API integration, deployment, code reviews, AI tools."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "Email",
+    "subtitle": "Feel free to reach out"
+  },
+  "lang": {
+    "fr": "FR",
+    "en": "EN",
+    "pt": "PT"
+  }
+}
