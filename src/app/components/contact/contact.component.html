@@ -1,0 +1,17 @@
+<section id="contact" class="fade-in">
+  <div class="contact-content">
+    <div class="section-header">
+      <span class="label">{{ 'contact.title' | translate }}</span>
+      <div class="line"></div>
+    </div>
+    <p class="subtitle">{{ 'contact.subtitle' | translate }}</p>
+    <div class="contact-list">
+      @for (contact of contacts; track contact.label) {
+        <a [href]="contact.url" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <span class="contact-label">{{ contact.label }}</span>
+          <span class="contact-value">{{ contact.value }}</span>
+        </a>
+      }
+    </div>
+  </div>
+</section>

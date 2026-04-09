@@ -1,0 +1,27 @@
+@use 'styles/variables' as *;
+
+.lang-switch {
+  display: flex;
+  gap: 4px;
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: $font-size-label;
+    letter-spacing: 1px;
+    color: $color-text-tertiary;
+    padding: 4px 8px;
+    border-radius: 2px;
+    transition: color $transition-fast, background $transition-fast;
+
+    &.active {
+      color: $color-accent;
+      font-weight: 600;
+    }
+
+    &:hover:not(.active) {
+      color: $color-text;
+    }
+  }
+}

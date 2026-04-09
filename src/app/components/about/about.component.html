@@ -1,0 +1,15 @@
+<section id="about" class="fade-in">
+  <div class="about-content">
+    <div class="section-header">
+      <span class="label">{{ 'about.title' | translate }}</span>
+      <div class="line"></div>
+    </div>
+    <p class="text">{{ 'about.text' | translate }}</p>
+    <p class="location">{{ 'about.location' | translate }}</p>
+    <div class="links">
+      @for (link of links; track link.label) {
+        <a [href]="link.url" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
+      }
+    </div>
+  </div>
+</section>

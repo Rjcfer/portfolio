@@ -1,0 +1,19 @@
+<nav [ngClass]="{ scrolled: scrolled }">
+  <div class="nav-container">
+    <a class="logo" (click)="scrollTo('hero')">R<span class="accent">F</span></a>
+
+    <button class="hamburger" (click)="toggleMenu()" [ngClass]="{ open: menuOpen }">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-links" [ngClass]="{ open: menuOpen }">
+      <a (click)="scrollTo('about')">{{ 'nav.about' | translate }}</a>
+      <a (click)="scrollTo('skills')">{{ 'nav.skills' | translate }}</a>
+      <a (click)="scrollTo('projects')">{{ 'nav.projects' | translate }}</a>
+      <a (click)="scrollTo('contact')">{{ 'nav.contact' | translate }}</a>
+      <app-language-switch />
+    </div>
+  </div>
+</nav>

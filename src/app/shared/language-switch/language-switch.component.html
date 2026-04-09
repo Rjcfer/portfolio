@@ -1,0 +1,10 @@
+<div class="lang-switch">
+  @for (lang of languages; track lang) {
+    <button
+      [ngClass]="{ active: currentLang === lang }"
+      (click)="switchLang(lang)"
+    >
+      {{ lang | uppercase }}
+    </button>
+  }
+</div>

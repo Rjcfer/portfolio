@@ -1,0 +1,23 @@
+@use 'styles/variables' as *;
+
+section { padding: $section-padding; background: $color-bg-warm; }
+.skills-content { max-width: 900px; margin: 0 auto; }
+
+.section-header {
+  display: flex; align-items: center; gap: 16px; margin-bottom: 3rem;
+  .label { color: $color-accent; font-size: $font-size-label; letter-spacing: 3px; font-weight: 600; text-transform: uppercase; white-space: nowrap; }
+  .line { flex: 1; height: 1px; background: $color-border; }
+}
+
+.categories { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
+.category h3 { font-size: $font-size-small; font-weight: 600; color: $color-text; margin-bottom: 1rem; letter-spacing: 1px; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.tag {
+  background: white; color: $color-text-secondary; padding: 6px 14px; border-radius: 4px;
+  font-size: $font-size-label; letter-spacing: 0.5px; border: 1px solid $color-border;
+  transition: border-color $transition-fast, color $transition-fast;
+  &:hover { border-color: $color-accent; color: $color-accent; }
+}
+
+@media (max-width: $breakpoint-mobile) { .categories { grid-template-columns: 1fr; } }

@@ -1,0 +1,17 @@
+<section id="hero">
+  <p class="subtitle">{{ 'hero.subtitle' | translate }}</p>
+  <h1><span class="light">Ricardo</span><br><span class="bold">Ferreira<span class="accent">.</span></span></h1>
+  <p class="description">{{ 'hero.description' | translate }}</p>
+  <div class="cta">
+    <button class="btn-primary" (click)="scrollTo('projects')">{{ 'hero.cta_projects' | translate }}</button>
+    <button class="btn-secondary" (click)="scrollTo('contact')">{{ 'hero.cta_contact' | translate }}</button>
+  </div>
+  <div class="techs">
+    @for (tech of techs; track tech; let last = $last) {
+      <span class="tech">{{ tech }}</span>
+      @if (!last) {
+        <span class="dot">·</span>
+      }
+    }
+  </div>
+</section>

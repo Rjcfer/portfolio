@@ -1,0 +1,20 @@
+<section id="skills" class="fade-in">
+  <div class="skills-content">
+    <div class="section-header">
+      <span class="label">{{ 'skills.title' | translate }}</span>
+      <div class="line"></div>
+    </div>
+    <div class="categories">
+      @for (category of categories; track category.titleKey) {
+        <div class="category">
+          <h3>{{ category.titleKey | translate }}</h3>
+          <div class="tags">
+            @for (skill of category.skills; track skill) {
+              <span class="tag">{{ skill }}</span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+@use 'styles/variables' as *;
+
+section {
+  padding: $section-padding;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 2rem;
+  .label { color: $color-accent; font-size: $font-size-label; letter-spacing: 3px; font-weight: 600; text-transform: uppercase; white-space: nowrap; }
+  .line { flex: 1; height: 1px; background: $color-border; }
+}
+
+.text { color: $color-text-secondary; font-size: $font-size-body; line-height: 1.8; margin-bottom: 1rem; }
+.location { color: $color-text-tertiary; font-size: $font-size-small; margin-bottom: 1.5rem; }
+
+.links {
+  display: flex;
+  gap: 20px;
+  a { color: $color-text-tertiary; font-size: $font-size-small; transition: color $transition-fast; &:hover { color: $color-accent; } }
+}

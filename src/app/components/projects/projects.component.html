@@ -1,0 +1,31 @@
+<section id="projects" class="fade-in">
+  <div class="projects-content">
+    <div class="section-header">
+      <span class="label">{{ 'projects.title' | translate }}</span>
+      <div class="line"></div>
+    </div>
+    <div class="project-grid">
+      @for (project of projects; track project.titleKey) {
+        <div class="project-card">
+          <div class="card-body">
+            <h3>{{ project.titleKey | translate }}</h3>
+            <p>{{ project.descriptionKey | translate }}</p>
+            <div class="techs">
+              @for (tech of project.techs; track tech) {
+                <span class="tech-tag">{{ tech }}</span>
+              }
+            </div>
+            <div class="card-links">
+              @if (project.liveUrl) {
+                <a [href]="project.liveUrl" target="_blank" rel="noopener noreferrer">{{ 'projects.view_project' | translate }} →</a>
+              }
+              @if (project.codeUrl) {
+                <a [href]="project.codeUrl" target="_blank" rel="noopener noreferrer">{{ 'projects.view_code' | translate }} →</a>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

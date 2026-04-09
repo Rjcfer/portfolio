@@ -1,0 +1,13 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio-nginx
+    networks:
+      - portfolio_net
+    restart: always
+
+networks:
+  portfolio_net:
+    name: portfolio_net

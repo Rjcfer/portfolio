@@ -1,0 +1,108 @@
+@use 'styles/variables' as *;
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: $navbar-height;
+  transition: background $transition-normal, box-shadow $transition-normal;
+
+  &.scrolled {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 1px 0 $color-border;
+  }
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: $color-text;
+  cursor: pointer;
+
+  .accent {
+    color: $color-accent;
+  }
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  a {
+    font-size: $font-size-label;
+    color: $color-text-secondary;
+    cursor: pointer;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $color-text;
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+
+  span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: $color-text;
+    transition: transform $transition-fast, opacity $transition-fast;
+  }
+
+  &.open span {
+    &:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    &:nth-child(2) { opacity: 0; }
+    &:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: $navbar-height;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 2rem;
+    gap: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+    &.open {
+      display: flex;
+    }
+
+    a {
+      font-size: $font-size-small;
+    }
+  }
+}
