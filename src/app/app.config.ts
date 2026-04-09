@@ -1,21 +1,18 @@
-import { ApplicationConfig } from '@angular/core';
+import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { provideHttpClient } from '@angular/common/http';
-import { provideTranslateService, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader, provideTranslateHttpLoader } from '@ngx-translate/http-loader';
+import { provideTranslateService } from '@ngx-translate/core';
+import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideBrowserGlobalErrorListeners(),
     provideHttpClient(),
+    provideTranslateService({
+      defaultLanguage: 'fr',
+    }),
     provideTranslateHttpLoader({
       prefix: './assets/i18n/',
       suffix: '.json',
-    }),
-    provideTranslateService({
-      defaultLanguage: 'fr',
-      loader: {
-        provide: TranslateLoader,
-        useClass: TranslateHttpLoader,
-      },
     }),
   ],
 };
