@@ -1,0 +1,32 @@
+// Colors
+$color-bg: #ffffff;
+$color-bg-warm: #fefcf7;
+$color-bg-warm-alt: #fffbf0;
+$color-accent: #f59e0b;
+$color-accent-hover: #d97706;
+$color-text: #1c1917;
+$color-text-secondary: #78716c;
+$color-text-tertiary: #94a3b8;
+$color-border: rgba(0, 0, 0, 0.06);
+$color-accent-subtle: rgba(245, 158, 11, 0.5);
+$color-accent-bg: rgba(245, 158, 11, 0.08);
+
+// Typography
+$font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+$font-size-hero: clamp(2.5rem, 5vw, 3.5rem);
+$font-size-section-title: clamp(1.5rem, 3vw, 2rem);
+$font-size-body: 1rem;
+$font-size-small: 0.875rem;
+$font-size-label: 0.6875rem;
+
+// Spacing
+$section-padding: clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 8rem);
+$navbar-height: 64px;
+
+// Breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+
+// Transitions
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
