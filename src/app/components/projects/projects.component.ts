@@ -22,7 +22,7 @@ export class ProjectsComponent {
       titleKey: 'projects.edh.title',
       descriptionKey: 'projects.edh.description',
       techs: ['Angular', 'Node.js', 'PostgreSQL', 'Docker', 'Gemini API'],
-      codeUrl: 'https://github.com/Rjcfer/edhAnalyser',
+      liveUrl: 'https://deckanalyser.fr',
     },
     {
       titleKey: 'projects.hiji.title',

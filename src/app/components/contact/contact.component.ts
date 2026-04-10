@@ -12,6 +12,6 @@ export class ContactComponent {
   contacts = [
     { label: 'Email', value: 'correia.ferreira.ricardo@gmail.com', url: 'mailto:correia.ferreira.ricardo@gmail.com' },
     { label: 'GitHub', value: 'Rjcfer', url: 'https://github.com/Rjcfer' },
-    { label: 'LinkedIn', value: 'Ricardo Ferreira', url: 'https://linkedin.com/in/ricardo-ferreira' },
+    { label: 'LinkedIn', value: 'Ricardo Ferreira', url: 'https://www.linkedin.com/in/ricardo-ferreira-045499220/' },
   ];
 }

@@ -7,7 +7,7 @@
     <p class="subtitle">{{ 'contact.subtitle' | translate }}</p>
     <div class="contact-list">
       @for (contact of contacts; track contact.label) {
-        <a [href]="contact.url" target="_blank" rel="noopener noreferrer" class="contact-item">
+        <a [href]="contact.url" [target]="contact.url.startsWith('mailto:') ? '_self' : '_blank'" rel="noopener noreferrer" class="contact-item">
           <span class="contact-label">{{ contact.label }}</span>
           <span class="contact-value">{{ contact.value }}</span>
         </a>

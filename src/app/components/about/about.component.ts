@@ -11,7 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
 export class AboutComponent {
   links = [
     { icon: 'github', url: 'https://github.com/Rjcfer', label: 'GitHub' },
-    { icon: 'linkedin', url: 'https://linkedin.com/in/ricardo-ferreira', label: 'LinkedIn' },
+    { icon: 'linkedin', url: 'https://www.linkedin.com/in/ricardo-ferreira-045499220/', label: 'LinkedIn' },
     { icon: 'email', url: 'mailto:correia.ferreira.ricardo@gmail.com', label: 'Email' },
   ];
 }
