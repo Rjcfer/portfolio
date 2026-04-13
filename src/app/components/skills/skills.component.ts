@@ -14,10 +14,21 @@ interface SkillCategory {
   styleUrl: './skills.component.scss',
 })
 export class SkillsComponent {
-  categories: SkillCategory[] = [
+  technicalCategories: SkillCategory[] = [
     { titleKey: 'skills.frontend', skills: ['Angular', 'TypeScript', 'CSS/SCSS', 'Bootstrap', 'React'] },
     { titleKey: 'skills.backend', skills: ['Java', 'Node.js', 'PostgreSQL', 'MySQL', 'REST API'] },
     { titleKey: 'skills.devops', skills: ['Docker', 'AWS', 'CI/CD', 'Nginx', 'Git', 'GitHub Actions'] },
-    { titleKey: 'skills.other', skills: ['Python', 'C/C++', 'API OpenAI', 'Android', 'Unity'] },
+    { titleKey: 'skills.ai', skills: ['Claude Code', 'Gemini', 'GitHub Copilot', 'API OpenAI'] },
+    { titleKey: 'skills.other', skills: ['Python', 'C/C++', 'Android', 'Unity'] },
+  ];
+
+  softSkillKeys: string[] = [
+    'skills.soft.punctuality',
+    'skills.soft.adaptability',
+    'skills.soft.flexibility',
+    'skills.soft.autonomy',
+    'skills.soft.self_discipline',
+    'skills.soft.initiative',
+    'skills.soft.motivation',
   ];
 }

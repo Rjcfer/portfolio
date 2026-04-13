@@ -9,15 +9,56 @@ section { padding: $section-padding; background: $color-bg-warm; }
   .line { flex: 1; height: 1px; background: $color-border; }
 }
 
-.categories { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
-.category h3 { font-size: $font-size-small; font-weight: 600; color: $color-text; margin-bottom: 1rem; letter-spacing: 1px; }
+.skill-group {
+  margin-bottom: 3rem;
+  &:last-child { margin-bottom: 0; }
+}
+
+.group-title {
+  font-size: $font-size-label;
+  letter-spacing: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $color-text;
+  margin-bottom: 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  &::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: $color-accent;
+  }
+}
+
+.categories { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem 2rem; }
+.category h4 { font-size: $font-size-small; font-weight: 600; color: $color-text; margin-bottom: 1rem; letter-spacing: 1px; }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tags--soft { margin-top: 0.25rem; }
 
 .tag {
-  background: white; color: $color-text-secondary; padding: 6px 14px; border-radius: 4px;
-  font-size: $font-size-label; letter-spacing: 0.5px; border: 1px solid $color-border;
+  background: white;
+  color: $color-text-secondary;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: $font-size-label;
+  letter-spacing: 0.5px;
+  border: 1px solid $color-border;
   transition: border-color $transition-fast, color $transition-fast;
   &:hover { border-color: $color-accent; color: $color-accent; }
 }
 
-@media (max-width: $breakpoint-mobile) { .categories { grid-template-columns: 1fr; } }
+.tag--soft {
+  background: transparent;
+  border: 1px solid $color-accent-subtle;
+  color: $color-text;
+  padding: 8px 16px;
+  font-weight: 500;
+  &:hover { background: $color-accent-bg; border-color: $color-accent; color: $color-accent; }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .categories { grid-template-columns: 1fr; gap: 2rem; }
+}

@@ -18,10 +18,22 @@
   },
   "skills": {
     "title": "Compétences",
+    "technical": "Techniques",
+    "soft_title": "Savoir-être",
     "frontend": "Frontend",
     "backend": "Backend",
     "devops": "DevOps & Cloud",
-    "other": "Autres"
+    "ai": "IA & Assistants",
+    "other": "Autres",
+    "soft": {
+      "punctuality": "Ponctualité",
+      "adaptability": "Capacité d'adaptation",
+      "flexibility": "Flexibilité",
+      "autonomy": "Travail en autonomie",
+      "self_discipline": "Autodiscipline",
+      "initiative": "Esprit d'initiative",
+      "motivation": "Motivation"
+    }
   },
   "projects": {
     "title": "Projets",

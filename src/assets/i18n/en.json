@@ -18,10 +18,22 @@
   },
   "skills": {
     "title": "Skills",
+    "technical": "Technical",
+    "soft_title": "Soft Skills",
     "frontend": "Frontend",
     "backend": "Backend",
     "devops": "DevOps & Cloud",
-    "other": "Other"
+    "ai": "AI & Assistants",
+    "other": "Other",
+    "soft": {
+      "punctuality": "Punctuality",
+      "adaptability": "Adaptability",
+      "flexibility": "Flexibility",
+      "autonomy": "Autonomy",
+      "self_discipline": "Self-discipline",
+      "initiative": "Initiative",
+      "motivation": "Motivation"
+    }
   },
   "projects": {
     "title": "Projects",

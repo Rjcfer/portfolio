@@ -113,7 +113,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.75rem;
   animation: fadeInUp 1s ease 0.3s both;
 }
 
@@ -166,31 +165,6 @@ h1 {
     border-bottom: 1px solid $color-accent;
     border-right: 1px solid $color-accent;
   }
-}
-
-.portrait-meta {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  font-size: $font-size-label;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: $color-text-tertiary;
-
-  .meta-index {
-    color: $color-accent;
-    font-weight: 500;
-    sup { font-size: 0.6em; text-transform: none; letter-spacing: 0; }
-  }
-
-  .meta-sep {
-    display: inline-block;
-    width: 28px;
-    height: 1px;
-    background: $color-border;
-  }
-
-  .meta-label { color: $color-text-secondary; font-weight: 500; }
 }
 
 .techs {

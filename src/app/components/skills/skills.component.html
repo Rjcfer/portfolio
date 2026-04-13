@@ -4,17 +4,30 @@
       <span class="label">{{ 'skills.title' | translate }}</span>
       <div class="line"></div>
     </div>
-    <div class="categories">
-      @for (category of categories; track category.titleKey) {
-        <div class="category">
-          <h3>{{ category.titleKey | translate }}</h3>
-          <div class="tags">
-            @for (skill of category.skills; track skill) {
-              <span class="tag">{{ skill }}</span>
-            }
+
+    <div class="skill-group">
+      <h3 class="group-title">{{ 'skills.technical' | translate }}</h3>
+      <div class="categories">
+        @for (category of technicalCategories; track category.titleKey) {
+          <div class="category">
+            <h4>{{ category.titleKey | translate }}</h4>
+            <div class="tags">
+              @for (skill of category.skills; track skill) {
+                <span class="tag">{{ skill }}</span>
+              }
+            </div>
           </div>
-        </div>
-      }
+        }
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h3 class="group-title">{{ 'skills.soft_title' | translate }}</h3>
+      <div class="tags tags--soft">
+        @for (skillKey of softSkillKeys; track skillKey) {
+          <span class="tag tag--soft">{{ skillKey | translate }}</span>
+        }
+      </div>
     </div>
   </div>
 </section>
