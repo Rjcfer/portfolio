@@ -1,16 +1,41 @@
 <section id="hero">
-  <p class="subtitle">{{ 'hero.subtitle' | translate }}</p>
-  <h1><span class="light">Ricardo</span><br><span class="bold">Ferreira<span class="accent">.</span></span></h1>
-  <p class="description">{{ 'hero.description' | translate }}</p>
-  <div class="cta">
-    <button class="btn-primary" (click)="scrollTo('projects')">{{ 'hero.cta_projects' | translate }}</button>
-    <button class="btn-secondary" (click)="scrollTo('contact')">{{ 'hero.cta_contact' | translate }}</button>
+  <div class="hero-grid">
+    <div class="text-col">
+      <p class="subtitle">{{ 'hero.subtitle' | translate }}</p>
+      <h1>
+        <span class="light">Ricardo</span><br>
+        <span class="bold">Ferreira<span class="accent">.</span></span>
+      </h1>
+      <p class="description">{{ 'hero.description' | translate }}</p>
+      <div class="cta">
+        <button class="btn-primary" (click)="scrollTo('projects')">{{ 'hero.cta_projects' | translate }}</button>
+        <button class="btn-secondary" (click)="scrollTo('contact')">{{ 'hero.cta_contact' | translate }}</button>
+      </div>
+    </div>
+
+    <aside class="portrait-col" aria-hidden="false">
+      <div class="portrait">
+        <div class="portrait-ring"></div>
+        <div class="portrait-frame">
+          <img src="assets/images/photo_rond.png" alt="Ricardo Ferreira" loading="eager" />
+        </div>
+        <span class="portrait-tick portrait-tick--tl"></span>
+        <span class="portrait-tick portrait-tick--br"></span>
+      </div>
+
+      <div class="portrait-meta">
+        <span class="meta-index">— N<sup>o</sup> 01</span>
+        <span class="meta-sep"></span>
+        <span class="meta-label">PORTFOLIO &middot; 2026</span>
+      </div>
+    </aside>
   </div>
+
   <div class="techs">
     @for (tech of techs; track tech; let last = $last) {
       <span class="tech">{{ tech }}</span>
       @if (!last) {
-        <span class="dot">·</span>
+        <span class="dot">&middot;</span>
       }
     }
   </div>

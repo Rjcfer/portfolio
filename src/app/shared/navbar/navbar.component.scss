@@ -27,14 +27,22 @@ nav {
 }
 
 .logo {
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 4px;
-  color: $color-text;
+  display: flex;
+  align-items: center;
   cursor: pointer;
+  height: 100%;
+  padding: 4px 0;
+  transition: opacity $transition-fast;
 
-  .accent {
-    color: $color-accent;
+  img {
+    height: 32px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  &:hover {
+    opacity: 0.78;
   }
 }
 

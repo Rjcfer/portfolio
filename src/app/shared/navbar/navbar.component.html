@@ -1,6 +1,8 @@
 <nav [ngClass]="{ scrolled: scrolled }">
   <div class="nav-container">
-    <a class="logo" (click)="scrollTo('hero')">R<span class="accent">F</span></a>
+    <a class="logo" (click)="scrollTo('hero')" aria-label="Ricardo Ferreira — Accueil">
+      <img src="assets/images/RF_logo_simple.png" alt="RF" />
+    </a>
 
     <button class="hamburger" (click)="toggleMenu()" [ngClass]="{ open: menuOpen }">
       <span></span>
