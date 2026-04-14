@@ -13,13 +13,9 @@ section {
   overflow: hidden;
 }
 
-.hero-grid {
+.hero-row {
   width: 100%;
   max-width: 1120px;
-  display: grid;
-  grid-template-columns: 1.25fr 1fr;
-  gap: clamp(2.5rem, 6vw, 6rem);
-  align-items: center;
   position: relative;
 
   &::before {
@@ -34,7 +30,7 @@ section {
   }
 }
 
-.text-col {
+.hero-text {
   text-align: left;
   animation: fadeInUp 0.9s ease 0.1s both;
 }
@@ -109,7 +105,7 @@ h1 {
   &:hover { border-color: $color-text-secondary; color: $color-text; }
 }
 
-.portrait-col {
+.hero-portrait {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -187,20 +183,18 @@ h1 {
 }
 
 @media (max-width: 900px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+  .hero-row {
     text-align: center;
     &::before { display: none; }
   }
-  .text-col {
+  .hero-text {
     text-align: center;
     order: 2;
     .subtitle { justify-content: center; }
   }
   .description { margin-left: auto; margin-right: auto; }
   .cta { justify-content: center; }
-  .portrait-col { order: 1; }
+  .hero-portrait { order: 1; }
   .portrait { width: 180px; }
   .portrait-ring { inset: -10px; }
 }
